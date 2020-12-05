@@ -71,7 +71,7 @@ body {
   position: relative;
 }
 
-.logo {
+.logo, .logo_black {
   background: url(../img/logo.svg) 0 0 no-repeat;
   height: 23px;
   width: 102px;
@@ -104,4 +104,45 @@ body {
   position: absolute;
   bottom: 10%;
   left: calc(50% - 52px);
+}
+
+.header_nav {
+  border-bottom: 1px solid #E6E6E6;
+  position: sticky;
+  top: 0;
+}
+
+.header_menu, .header_menu_items {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 12px 0;
+}
+
+.logo_black {
+  background: url(../img/logo_bl.svg) 0 0 no-repeat;
+  height: 18px;
+  width: 80px;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.header_menu_items {
+  list-style: none;
+  align-items: center;
+}
+
+.header_link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.09091px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  color: #48555B;
+}
+
+.header_link:hover {
+  color: #00A4E5;
 }
