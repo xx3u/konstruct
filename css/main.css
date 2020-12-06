@@ -218,6 +218,10 @@ body {
   background: url(../uploads/build.png) 0 0 no-repeat;
 }
 
+.capabilities {
+  padding-bottom: 115px;
+}
+
 .capabilities_header {
   display: flex;
   justify-content: space-between;
@@ -233,7 +237,7 @@ body {
   width: 50%;
 }
 
-.service_btn {
+.service_btn, .signup_btn, .touch_btn {
   background: #00A4E5;
   color: #ffffff;
   text-decoration: none;
@@ -245,7 +249,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.service_btn:hover {
+.service_btn:hover, .signup_btn:hover, .touch_btn:hover {
   background: #33c5ff;
 }
 
@@ -291,4 +295,53 @@ body {
 
 .factory {
   background: url(../img/factory.svg) 0 0 no-repeat;
+}
+
+.get_in_touch {
+  height: 499px;
+  width: 100%;
+  background: url(../uploads/bg2.png) 0 0 no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #171819;
+}
+
+.amazing_title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  padding: 115px 0 35px;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.touch_btn {
+  margin: 0 auto;
+  display: block;
+  width: 11%;
+}
+
+.sign_up {
+  background: #171819;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.signup_title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.846154px;
+  padding-right: 100px;
+}
+
+input[type=email] {
+  padding: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.07px;
 }
