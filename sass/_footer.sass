@@ -1,0 +1,48 @@
+.footer_block
+    background: #141A20
+    color: #ffffff
+
+.footer_nav
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding: 30px 0
+
+.footer_co, .footer_links, .footer_contact
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+
+.footer_co
+    width: 27%
+    & > .logo
+        margin: 15px 0
+
+.footer_title
+    text-decoration: none
+    color: #ffffff
+    text-transform: uppercase
+
+.footer_link
+    +font(600, 11px, 25px)
+    letter-spacing: 0.846154px
+    @extend .footer_title
+
+.footer_social
+    display: flex
+    justify-content: space-between
+
+.soc_item
+    height: 12px
+    width: 12px
+    padding-right: 40px
+    // display: inline-block
+
+.fb
+    background: url(../img/fb.png) 0 0 no-repeat
+
+.tw
+    background: url(../img/tw.png) 50% 50% no-repeat
+
+.gl
+    background: url(../img/gl.png) 100% 100% no-repeat

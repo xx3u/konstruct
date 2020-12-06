@@ -319,7 +319,8 @@ body {
 .touch_btn {
   margin: 0 auto;
   display: block;
-  width: 11%;
+  width: 10%;
+  text-align: center;
 }
 
 .sign_up {
@@ -344,4 +345,65 @@ input[type=email] {
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.07px;
+}
+
+.footer_block {
+  background: #141A20;
+  color: #ffffff;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+
+.footer_co, .footer_links, .footer_contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer_co {
+  width: 27%;
+}
+.footer_co > .logo, .footer_co > .logo_black {
+  margin: 15px 0;
+}
+
+.footer_title, .footer_link {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer_link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 0.846154px;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.soc_item {
+  height: 12px;
+  width: 12px;
+  padding-right: 40px;
+}
+
+.fb {
+  background: url(../img/fb.png) 0 0 no-repeat;
+}
+
+.tw {
+  background: url(../img/tw.png) 50% 50% no-repeat;
+}
+
+.gl {
+  background: url(../img/gl.png) 100% 100% no-repeat;
 }
