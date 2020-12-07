@@ -1,6 +1,8 @@
 .footer_block
     background: #141A20
     color: #ffffff
+    +responsive(1024px)
+        padding: 10px 20px
 
 .footer_nav
     display: flex
@@ -22,11 +24,36 @@
     text-decoration: none
     color: #ffffff
     text-transform: uppercase
+    
+.footer_text
+    +responsive(640px)
+    display: none
 
 .footer_link
     +font(600, 11px, 25px)
     letter-spacing: 0.846154px
     @extend .footer_title
+    padding-bottom: 10px
+
+.faq, .blog, .footer_social
+    align-self: center
+    +responsive(1024px)
+        display: none
+
+.footer_contact
+    +responsive(450px)    
+        display: none
+
+.footer_social
+    flex-direction: column
+
+.footer_contact_item
+    +font(normal, 11px, 15px)
+    letter-spacing: 0.846154px
+    padding-bottom: 15px
+
+.footer_contact_item:first-child
+    text-transform: uppercase
 
 .footer_social
     display: flex
@@ -36,7 +63,8 @@
     height: 12px
     width: 12px
     padding-right: 40px
-    // display: inline-block
+    +responsive(1024px)
+        display: none
 
 .fb
     background: url(../img/fb.png) 0 0 no-repeat
@@ -46,3 +74,13 @@
 
 .gl
     background: url(../img/gl.png) 100% 100% no-repeat
+
+.copyright
+    background: #171819
+    color: #ffffff
+
+.copyright_text
+    +font(normal, 11px, 15px)
+    letter-spacing: 0.846154px
+    padding: 22px 0
+    text-align: center 

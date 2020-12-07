@@ -1,17 +1,24 @@
 .capabilities
     padding-bottom: 115px
+    +responsive(1024px)
+        padding: 0 20px
 
 .capabilities_header
     display: flex
     justify-content: space-between
     align-content: center
     padding: 0 0 70px
+    +responsive(450px)
+        flex-direction: column
 
 .capabilities_header > .title
     padding: 0
 
 .small_text
     width: 50%
+    +responsive(450px)
+    width: 100%
+    padding: 20px 0
 
 .service_btn
     background: $secondary_color
@@ -21,6 +28,8 @@
     padding: 11px 29px
     +font(bold, 13px, 18px)
     letter-spacing: 0.5px
+    +responsive(768px)
+        display: none
 
 .service_btn:hover
     background: lighten($secondary_color, 15%)
@@ -29,11 +38,17 @@
     display: flex
     justify-content: space-between
     align-content: center
+    +responsive(640px)
+        flex-direction: column
 
 .capabilities_item
     border: 1px solid #E6E6E6
     margin-right: 28px
     padding: 38px 20px
+    +responsive(640px)
+        margin-right: 0
+        margin-bottom: 20px
+        padding: 10px 20px
 
 .capabilities_item:last-child
     margin-right: 0

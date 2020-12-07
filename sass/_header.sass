@@ -6,6 +6,9 @@
     text-align: center
     color: #ffffff
     position: relative
+    background-position: center center
+    +responsive(768px)
+        height: 555px
 
 .logo
     background: url(../img/logo.svg) 0 0 no-repeat
@@ -19,6 +22,8 @@
     font-family: 'Bebas Neue'
     +font(bold, 60px, 70px)
     letter-spacing: 5.70937px
+    +responsive(640px)
+        padding-top: 50px
 
 .description
     +font(600, 16px, 22px)
@@ -37,6 +42,8 @@
     position: sticky
     top: 0
     background: #ffffff
+    +responsive(1024px)
+        padding: 0 20px
 
 .header_menu
     display: flex
@@ -67,3 +74,18 @@
 
 .header_link:hover
     color: $secondary_color
+
+.burger_item
+    display: none
+    +responsive(768px)
+        float: right
+        display: block
+
++responsive(768px)
+    .burger_item
+        position: absolute
+        right: 5%
+        top: 32%
+    .header_item
+        display: none
+

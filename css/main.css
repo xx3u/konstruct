@@ -69,9 +69,15 @@ body {
   text-align: center;
   color: #ffffff;
   position: relative;
+  background-position: center center;
+}
+@media screen and (max-width: 768px) {
+  .main_header {
+    height: 555px;
+  }
 }
 
-.logo, .logo_black {
+.logo {
   background: url(../img/logo.svg) 0 0 no-repeat;
   height: 23px;
   width: 102px;
@@ -86,6 +92,11 @@ body {
   font-size: 60px;
   line-height: 70px;
   letter-spacing: 5.70937px;
+}
+@media screen and (max-width: 640px) {
+  .main_title {
+    padding-top: 50px;
+  }
 }
 
 .description {
@@ -112,6 +123,11 @@ body {
   top: 0;
   background: #ffffff;
 }
+@media screen and (max-width: 1024px) {
+  .header_nav {
+    padding: 0 20px;
+  }
+}
 
 .header_menu, .header_menu_items {
   display: flex;
@@ -121,6 +137,7 @@ body {
 }
 
 .logo_black {
+  display: inline-block;
   background: url(../img/logo_bl.svg) 0 0 no-repeat;
   height: 18px;
   width: 80px;
@@ -148,8 +165,34 @@ body {
   color: #00A4E5;
 }
 
+.burger_item {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .burger_item {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .burger_item {
+    position: absolute;
+    right: 5%;
+    top: 32%;
+  }
+
+  .header_item {
+    display: none;
+  }
+}
 .story {
   padding-bottom: 118px;
+}
+@media screen and (max-width: 1024px) {
+  .story {
+    padding-bottom: 40px;
+  }
 }
 
 .title {
@@ -162,15 +205,31 @@ body {
   padding: 50px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .story > .title {
+    padding: 20px 0;
+  }
+}
+
 .story_items {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .story_items {
+    padding: 0 20px;
+  }
+}
 
 .story_text {
   flex: 0 0 50%;
   padding-right: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .story_text {
+    flex: 0 0 100%;
+  }
 }
 
 .subtitle {
@@ -179,6 +238,11 @@ body {
   line-height: 27px;
   letter-spacing: 0.1875px;
   padding: 15px 0 58px;
+}
+@media screen and (max-width: 1024px) {
+  .subtitle {
+    padding: 15px 0;
+  }
 }
 
 .blue {
@@ -189,6 +253,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
+}
+@media screen and (max-width: 1024px) {
+  .story_images {
+    display: none;
+  }
 }
 
 .story_image {
@@ -221,12 +290,22 @@ body {
 .capabilities {
   padding-bottom: 115px;
 }
+@media screen and (max-width: 1024px) {
+  .capabilities {
+    padding: 0 20px;
+  }
+}
 
 .capabilities_header {
   display: flex;
   justify-content: space-between;
   align-content: center;
   padding: 0 0 70px;
+}
+@media screen and (max-width: 450px) {
+  .capabilities_header {
+    flex-direction: column;
+  }
 }
 
 .capabilities_header > .title {
@@ -235,8 +314,9 @@ body {
 
 .small_text {
   width: 50%;
+  width: 100%;
+  padding: 20px 0;
 }
-
 .service_btn, .signup_btn, .touch_btn {
   background: #00A4E5;
   color: #ffffff;
@@ -248,6 +328,11 @@ body {
   line-height: 18px;
   letter-spacing: 0.5px;
 }
+@media screen and (max-width: 768px) {
+  .service_btn, .signup_btn, .touch_btn {
+    display: none;
+  }
+}
 
 .service_btn:hover, .signup_btn:hover, .touch_btn:hover {
   background: #33c5ff;
@@ -258,11 +343,23 @@ body {
   justify-content: space-between;
   align-content: center;
 }
+@media screen and (max-width: 640px) {
+  .capabilities_items {
+    flex-direction: column;
+  }
+}
 
 .capabilities_item {
   border: 1px solid #E6E6E6;
   margin-right: 28px;
   padding: 38px 20px;
+}
+@media screen and (max-width: 640px) {
+  .capabilities_item {
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
 }
 
 .capabilities_item:last-child {
@@ -304,6 +401,11 @@ body {
   background-size: cover;
   border-bottom: 1px solid #171819;
 }
+@media screen and (max-width: 375px) {
+  .get_in_touch {
+    padding: 0 20px;
+  }
+}
 
 .amazing_title {
   font-weight: bold;
@@ -315,12 +417,32 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .amazing_title {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .amazing_title {
+    width: 100%;
+  }
+}
 
 .touch_btn {
   margin: 0 auto;
   display: block;
   width: 10%;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .touch_btn {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .touch_btn {
+    width: 35%;
+  }
 }
 
 .sign_up {
@@ -338,6 +460,11 @@ body {
   letter-spacing: 0.846154px;
   padding-right: 100px;
 }
+@media screen and (max-width: 640px) {
+  .signup_title {
+    display: none;
+  }
+}
 
 input[type=email] {
   padding: 10px;
@@ -347,9 +474,20 @@ input[type=email] {
   letter-spacing: 0.07px;
 }
 
+@media screen and (max-width: 640px) {
+  .signup_btn {
+    display: inline-block;
+  }
+}
+
 .footer_block {
   background: #141A20;
   color: #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .footer_block {
+    padding: 10px 20px;
+  }
 }
 
 .footer_nav {
@@ -368,7 +506,7 @@ input[type=email] {
 .footer_co {
   width: 27%;
 }
-.footer_co > .logo, .footer_co > .logo_black {
+.footer_co > .logo {
   margin: 15px 0;
 }
 
@@ -378,11 +516,46 @@ input[type=email] {
   text-transform: uppercase;
 }
 
+.footer_text {
+  display: none;
+}
 .footer_link {
   font-weight: 600;
   font-size: 11px;
   line-height: 25px;
   letter-spacing: 0.846154px;
+  padding-bottom: 10px;
+}
+
+.faq, .blog, .footer_social {
+  align-self: center;
+}
+@media screen and (max-width: 1024px) {
+  .faq, .blog, .footer_social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer_contact {
+    display: none;
+  }
+}
+
+.footer_social {
+  flex-direction: column;
+}
+
+.footer_contact_item {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.846154px;
+  padding-bottom: 15px;
+}
+
+.footer_contact_item:first-child {
+  text-transform: uppercase;
 }
 
 .footer_social {
@@ -395,6 +568,11 @@ input[type=email] {
   width: 12px;
   padding-right: 40px;
 }
+@media screen and (max-width: 1024px) {
+  .soc_item {
+    display: none;
+  }
+}
 
 .fb {
   background: url(../img/fb.png) 0 0 no-repeat;
@@ -406,4 +584,18 @@ input[type=email] {
 
 .gl {
   background: url(../img/gl.png) 100% 100% no-repeat;
+}
+
+.copyright {
+  background: #171819;
+  color: #ffffff;
+}
+
+.copyright_text {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.846154px;
+  padding: 22px 0;
+  text-align: center;
 }
